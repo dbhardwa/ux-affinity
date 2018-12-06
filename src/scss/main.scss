@@ -1,7 +1,35 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #A52A2A;
 
+$primary-font-color: #626262;
+$border-color: #979797;
+
 body {
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $primary-font-color;
+}
+
+.node rect {
+  fill: #FFFFFF;
+  stroke: $border-color;
+  stroke-width: 1px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: $border-color;
+  stroke-width: 1px;
+}
+
+p {
+  margin: 0;
+}
+
+div .nodeDiv {
+  box-sizing: border-box;
+  padding: 7px;
 }
